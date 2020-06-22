@@ -1,0 +1,1030 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "accountslock",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "adduser",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "counter",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "name"
+                },
+                {
+                    "name": "counter",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "coupon_req",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                },
+                {
+                    "name": "created_at",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "couponapprov",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "is_approved",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "couponbuy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "couponcancel",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "couponreq",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "issuer",
+                    "type": "name"
+                },
+                {
+                    "name": "maximum_supply",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "currency_stat",
+            "base": "",
+            "fields": [
+                {
+                    "name": "supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "deposit",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "referral",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "endproduct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "product_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "global",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "withdrawal_fee",
+                    "type": "uint64"
+                },
+                {
+                    "name": "referral_fee",
+                    "type": "uint64"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "referral_amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "interest_amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "withdraw_amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "lockup_amount",
+                    "type": "asset"
+                },
+                {
+                    "name": "liabilities_amount",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "initcontract",
+            "base": "",
+            "fields": [
+                {
+                    "name": "withdrawal_fee",
+                    "type": "uint64"
+                },
+                {
+                    "name": "referral_fee",
+                    "type": "uint64"
+                },
+                {
+                    "name": "sym",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "initglobalva",
+            "base": "",
+            "fields": [
+                {
+                    "name": "mode",
+                    "type": "int32"
+                }
+            ]
+        },
+        {
+            "name": "issue",
+            "base": "",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "lock",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "mergeprod",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ids",
+                    "type": "uint64[]"
+                }
+            ]
+        },
+        {
+            "name": "mkproduct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "product_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "rate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "period",
+                    "type": "uint64"
+                },
+                {
+                    "name": "interest_period",
+                    "type": "uint64"
+                },
+                {
+                    "name": "limit",
+                    "type": "asset"
+                },
+                {
+                    "name": "unit",
+                    "type": "asset"
+                },
+                {
+                    "name": "pre_fee",
+                    "type": "asset"
+                },
+                {
+                    "name": "lockup_rate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "payment",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "next_payment_at",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "payment2",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "payment_log",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "product_info",
+            "base": "",
+            "fields": [
+                {
+                    "name": "product_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "product_period",
+                    "type": "uint64"
+                },
+                {
+                    "name": "interest_rate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "interest_period",
+                    "type": "uint64"
+                },
+                {
+                    "name": "lockup_rate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "limit",
+                    "type": "asset"
+                },
+                {
+                    "name": "unit",
+                    "type": "asset"
+                },
+                {
+                    "name": "invested",
+                    "type": "asset"
+                },
+                {
+                    "name": "pre_fee",
+                    "type": "asset"
+                },
+                {
+                    "name": "sequence",
+                    "type": "int32"
+                }
+            ]
+        },
+        {
+            "name": "product_users",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "product_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "total_interest",
+                    "type": "asset"
+                },
+                {
+                    "name": "remain_interest",
+                    "type": "asset"
+                },
+                {
+                    "name": "lockup_interest",
+                    "type": "asset"
+                },
+                {
+                    "name": "total_count",
+                    "type": "int32"
+                },
+                {
+                    "name": "remain_count",
+                    "type": "int32"
+                },
+                {
+                    "name": "created_at",
+                    "type": "uint64"
+                },
+                {
+                    "name": "expired_at",
+                    "type": "uint64"
+                },
+                {
+                    "name": "next_payment_at",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "receipt",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "referral",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "referral",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "referralto",
+            "base": "",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "removelog",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "removelogs",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ids",
+                    "type": "uint64[]"
+                }
+            ]
+        },
+        {
+            "name": "retire",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "rmpayment2",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "rmpayment2s",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ids",
+                    "type": "uint64[]"
+                }
+            ]
+        },
+        {
+            "name": "rmproduct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "product_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "rmproductusr",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "subscription",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "product_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "referral",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "transfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "transferto",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "tx_log",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "type",
+                    "type": "int32"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                },
+                {
+                    "name": "tx_id",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "created_at",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "unlock",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "unsubscript",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "rate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "users",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "referral",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "withdraw",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "adduser",
+            "type": "adduser",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "couponapprov",
+            "type": "couponapprov",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "couponbuy",
+            "type": "couponbuy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "couponcancel",
+            "type": "couponcancel",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "couponreq",
+            "type": "couponreq",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deposit",
+            "type": "deposit",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "endproduct",
+            "type": "endproduct",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "initcontract",
+            "type": "initcontract",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "initglobalva",
+            "type": "initglobalva",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "issue",
+            "type": "issue",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "lock",
+            "type": "lock",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "mergeprod",
+            "type": "mergeprod",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "mkproduct",
+            "type": "mkproduct",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "payment",
+            "type": "payment",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "payment2",
+            "type": "payment2",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "receipt",
+            "type": "receipt",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "referralto",
+            "type": "referralto",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "removelog",
+            "type": "removelog",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "removelogs",
+            "type": "removelogs",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "retire",
+            "type": "retire",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmpayment2",
+            "type": "rmpayment2",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmpayment2s",
+            "type": "rmpayment2s",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmproduct",
+            "type": "rmproduct",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rmproductusr",
+            "type": "rmproductusr",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "subscription",
+            "type": "subscription",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transfer",
+            "type": "transfer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transferto",
+            "type": "transferto",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unlock",
+            "type": "unlock",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unsubscript",
+            "type": "unsubscript",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "withdraw",
+            "type": "withdraw",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "accountslock",
+            "type": "accountslock",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "counter",
+            "type": "counter",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "coupon.req",
+            "type": "coupon_req",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "global",
+            "type": "global",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "payment.log",
+            "type": "payment_log",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "product.info",
+            "type": "product_info",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "product.user",
+            "type": "product_users",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "referral",
+            "type": "referral",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stat",
+            "type": "currency_stat",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "tx.log",
+            "type": "tx_log",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "users",
+            "type": "users",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
